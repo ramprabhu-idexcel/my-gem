@@ -1,6 +1,5 @@
 require 'active_record'
 require 'mygem/version'
-require 'mygem/migration'
 
 module Mygem # :nodoc:
   autoload :Restaurant, 'mygem/restaurant'
