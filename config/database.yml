@@ -1,0 +1,7 @@
+test:
+  adapter: mysql2
+  encoding: utf8
+  database: web_blog_gem
+  username: root
+  password: root
+  host: localhost
