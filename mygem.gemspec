@@ -15,15 +15,4 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{config,db,lib}/**/*"] + ["Rakefile", "README.md"]
   s.test_files = Dir["spec/**/*"]
-
-  s.add_dependency('squeel')
-  s.add_dependency('validates_email_format_of')
-
-  s.add_development_dependency "bundler"
-  s.add_development_dependency "factory_girl"
-  s.add_development_dependency "ffaker"
-  s.add_development_dependency "pry"
-  s.add_development_dependency "rake"
-  s.add_development_dependency 'shoulda'
-  s.add_development_dependency "valid_attribute"
 end
