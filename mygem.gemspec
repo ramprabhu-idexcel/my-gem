@@ -1,4 +1,6 @@
-$:.push File.expand_path("../lib", __FILE__)
+#$:.push File.expand_path("../lib", __FILE__)
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require "mygem/version"
 
@@ -16,4 +18,6 @@ Gem::Specification.new do |s|
   s.files = Dir["{config,db,lib}/**/*"] + ["Rakefile", "README.md"]
   s.test_files = Dir["spec/**/*"]
   s.add_dependency("rails", "~> 5.0.1")
+  s.add_development_dependency "bundler"
+  s.require_paths = ["lib"]
 end

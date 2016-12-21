@@ -112,6 +112,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler
   mygem!
   mysql2
   pg
