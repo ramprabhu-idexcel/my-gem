@@ -3,8 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "mygem/version"
 
 Gem::Specification.new do |s|
-  s.name        = "mygem"
-  s.version     = Mygem::VERSION
+  s.name        = "mygem"  
   s.authors     = ["Ramprabhu"]
   s.email       = ["nramprabu@gmail.com"]
   s.summary     = %q{Common Models between Master and MyAdmin.}
