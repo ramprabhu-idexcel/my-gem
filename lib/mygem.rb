@@ -16,4 +16,3 @@ module Mygem # :nodoc:
 end
 
 ActiveRecord::Base.store_full_sti_class = false
-require 'mygem/railtie' if defined?(Rails)
