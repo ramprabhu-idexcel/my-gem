@@ -5,7 +5,7 @@ require "mygem/version"
 Gem::Specification.new do |s|
   s.name        = "mygem"  
   s.authors     = ["Ramprabhu"]
-  s.version       = Mygem::VERSION
+  s.version     = Mygem::VERSION
   s.platform    = Gem::Platform::RUBY
   s.email       = ["nramprabu@gmail.com"]
   s.summary     = %q{Common Models between Master and MyAdmin.}
@@ -16,8 +16,6 @@ Gem::Specification.new do |s|
   s.files = Dir["{config,db,lib}/**/*"] + ["Rakefile", "README.md"]
   s.test_files = Dir["spec/**/*"]
 
-  s.add_dependency("rails", "~> 5.0.1")
-  s.add_dependency('activerecord', '~> 5.0.1')
   s.add_dependency('squeel')
   s.add_dependency('validates_email_format_of')
 
@@ -26,8 +24,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency "ffaker"
   s.add_development_dependency "pry"
   s.add_development_dependency "rake"
-  s.add_development_dependency "rspec", '~>3.2'
-  s.add_development_dependency "rspec-rails"
   s.add_development_dependency 'shoulda'
   s.add_development_dependency "valid_attribute"
 end
