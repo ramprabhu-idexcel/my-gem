@@ -4,6 +4,7 @@ require 'mygem/version'
 module Mygem # :nodoc:
   autoload :Restaurant, 'mygem/restaurant'
   autoload :Review, 'mygem/review'
+  autoload :User, 'mygem/user'
 
   def self.root
     lib_path = File.dirname(__FILE__)
