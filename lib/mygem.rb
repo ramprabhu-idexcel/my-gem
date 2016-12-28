@@ -6,6 +6,7 @@ module Mygem # :nodoc:
   autoload :Review, 'mygem/review'
   autoload :User, 'mygem/user'
   autoload :UserScope, 'mygem/user'
+  autoload :AdminComment, 'mygem/admin_comment'
 
   def self.root
     lib_path = File.dirname(__FILE__)
