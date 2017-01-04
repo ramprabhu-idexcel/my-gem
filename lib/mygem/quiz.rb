@@ -1,5 +1,6 @@
 module Mygem
   class Quiz < ActiveRecord::Base
-    validates :question, :answer, :type, :option, presence: true
+    serialize :options, Array
+    validates :question, :answer, :type, :options, presence: true
   end
 end
