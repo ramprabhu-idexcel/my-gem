@@ -7,6 +7,8 @@ module Mygem
       has_many :events, dependent: :destroy
       validates :first_name, :last_name, :email, :username, :phone, :age, presence: true
       validates :username, :email, uniqueness: true
+      validates :password, :password_confirmation, presence: true, on: :create
+      validates :password, confirmation: true
     end
 
     def name
