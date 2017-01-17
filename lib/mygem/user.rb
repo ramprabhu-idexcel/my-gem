@@ -5,10 +5,17 @@ module Mygem
     included do
       before_update :generate_token
       has_many :events, dependent: :destroy
+      has_many :scores, dependent: :destroy
       validates :first_name, :last_name, :email, :username, :phone, :age, presence: true
       validates :username, :email, uniqueness: true
       validates :password, :password_confirmation, presence: true, on: :create
       validates :password, confirmation: true
+
+      class << self
+        def total_scores
+          joins(:scores).select("users.*, SUM(scores.marks) as total_marks").group("users.id")
+        end
+      end
     end
 
     def name
