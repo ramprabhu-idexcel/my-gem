@@ -8,7 +8,7 @@ module Mygem
             .joins(:reviews)
             .select("restaurants.*, AVG(reviews.rating) as avg_rating")
             .group("restaurants.id")
-            .having("avg_rating > 2")
+            .having("AVG(reviews.rating) > 2")
             .limit(10)
       end
 
