@@ -9,7 +9,6 @@ module Mygem
             .select("restaurants.*, AVG(reviews.rating) as avg_rating")
             .group("restaurants.id")
             .having("AVG(reviews.rating) > 2")
-            .limit(10)
       end
 
       def great_reviews
