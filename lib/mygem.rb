@@ -13,6 +13,7 @@ module Mygem # :nodoc:
   autoload :Score, 'mygem/score'
   autoload :Project, 'mygem/project'
   autoload :Task, 'mygem/task'
+  autoload :Ip, 'mygem/ip'
 
   def self.root
     lib_path = File.dirname(__FILE__)
