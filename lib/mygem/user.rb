@@ -6,6 +6,7 @@ module Mygem
       before_update :generate_token
       has_many :events, dependent: :destroy
       has_many :scores, dependent: :destroy
+      has_many :tasks, dependent: :destroy, :foreign_key => "user_id"
       validates :first_name, :last_name, :email, :username, :phone, :age, presence: true
       validates :username, :email, uniqueness: true
       validates :password, :password_confirmation, presence: true, on: :create
