@@ -15,6 +15,9 @@ module Mygem # :nodoc:
   autoload :Task, 'mygem/task'
   autoload :Ip, 'mygem/ip'
   autoload :Employee, 'mygem/employee'
+  autoload :EmployeeRole, 'mygem/employee_role'
+  autoload :Contact, 'mygem/contact'
+  autoload :EmployeeContact, 'mygem/employee_contact'
 
   def self.root
     lib_path = File.dirname(__FILE__)
